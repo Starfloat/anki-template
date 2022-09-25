@@ -125,6 +125,8 @@ footer > a:last-child:after {content:""; width: 0; }
 
 /*Main Sentence*/
 .jpsentence {
+	overflow: hidden;
+	text-align: center;
 	font-size: 32px;
 }
 

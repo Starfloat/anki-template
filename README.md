@@ -21,6 +21,7 @@ My Anki Template for Japanese card creation with Yomichan
 | VocabDefJP           | manual                                            | Sub field for definitions.                                              |
 | Hint                 | manual                                            | Hint to be shown in the front.                                          |
 | Image                | manual/auto                                       | Image received from animecards script or sharex.                        |
-| SentenceContext      | auto/manual                                       | Script received from animecards script or pasted manually from source.  |
+| SentenceContext      | manual/auto                                       | Script received from animecards script or pasted manually from source.  |
 | SentenceContextAudio | Audio received from animecards script.            |                                                                         |
+| Inflection           | {cloze-body}                                      | Inflected form of the mined word.                                       |
 | Conjugation          | {conjugation}                                     | Conjugation path from the raw inflected term to the source term.        |
