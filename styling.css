@@ -50,8 +50,8 @@ header > div:not(:last-child) { margin-right: 3px; }
 	text-align: center;
 	display: inline-block;
 	text-transform: lowercase;
-	background-color: #333;
-	color: #FFFAF0;
+	/* background-color: #333;
+	color: #FFFAF0; */
 	font-weight: bold;
 	padding: 1px 3px;
 	margin: 0;

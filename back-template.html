@@ -7,11 +7,15 @@
 		{document.getElementById('showPitchPosBtn') .style.display=''}
 	else
 		{document.getElementById('showPitchPosBtn') .style.display='none'}">
-<div class="vocab">【{{VocabKanji}}】{{VocabKana}}</div>
+<div class="vocab">【	{{edit:furigana:VocabKanjiFurigana}}】{{edit:kana:VocabKanjiFurigana}}</div>
 </button>
-{{#VocabPitchPos}}<span class="tags" id="pitchnum">{{edit:VocabPitchPos}}</span>{{/VocabPitchPos}}
+{{#VocabPitchPos}}<span class="tags" id="pitchnum">{{edit:VocabPitchPos}}{{#PitchGraph}}
+<div class="pitchgraph">
+	<div>{{edit:furigana:PitchGraph}}</div>
+</div>
+{{/PitchGraph}}</span> {{/VocabPitchPos}} 
 <div class="spoiler" id="showPitchPosBtn" style="display:none"> 
-	{{edit:kana:VocabKanaPitch}}
+	{{edit:VocabKanaPitch}}
 </div> 
 
 <!-- ## Button Script for definition toggle in the future ##
@@ -48,16 +52,7 @@
 	</div>
 {{/EnglishSentence}}
 
-
 <div class="audio">{{VocabAudio}}{{SentAudio}}<div style="display:none">[sound:_LongSilence.mp3]</div>{{SentenceContextAudio}}</div>
-
-<!--
-{{#PitchGraph}}
-<div class="pitchgraph">
-	<div>{{edit:furigana:PitchGraph}}</div>
-</div>
-{{/PitchGraph}}
--->
 
 <div class="sentencecontext" lang="ja">
 {{edit:furigana::SentenceContext}}
