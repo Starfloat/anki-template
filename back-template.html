@@ -1,0 +1,80 @@
+<div class="fside">{{FrontSide}}</div>
+<hr id="answer">
+
+<button class="showPitchPosBtn" type="button"  onclick="
+	if
+		(document.getElementById('showPitchPosBtn') .style.display=='none')
+		{document.getElementById('showPitchPosBtn') .style.display=''}
+	else
+		{document.getElementById('showPitchPosBtn') .style.display='none'}">
+<div class="vocab">【{{VocabKanji}}】{{VocabKana}}</div>
+</button>
+{{#VocabPitchPos}}<span class="tags" id="pitchnum">{{edit:VocabPitchPos}}</span>{{/VocabPitchPos}}
+<div class="spoiler" id="showPitchPosBtn" style="display:none"> 
+	{{edit:kana:VocabKanaPitch}}
+</div> 
+
+<!-- ## Button Script for definition toggle in the future ##
+<button class="defButton" type="button"  onclick="
+	if
+		(document.getElementById('defButton') .style.display=='none')
+		{document.getElementById('defButton') .style.display=''}
+	else
+		{document.getElementById('defButton') .style.display='none'}">
+<span id="DefEng">{{VocabDef}}</span>
+</button>
+## Button Script for definition toggle in the future ##	-->
+
+{{#VocabDef}}	
+<div class="definitions">{{edit:furigana:VocabDef}}</div>
+{{/VocabDef}}
+
+{{#VocabDef}}	
+<div class="definitions">{{edit:furigana:VocabDefJP}}</div>
+{{/VocabDef}}
+
+{{#Image}}<div class="images" >{{edit:Image}}</div>{{/Image}}
+
+{{#SentFuriganaSentence}}
+<div class="jpsentence" lang="ja">
+	{{edit:furigana:SentFuriganaSentence}}
+   <span id="conjugation">{{Conjugation}}<span>
+</div>
+{{/SentFuriganaSentence}}
+
+{{#EnglishSentence}}
+	<div class="ensentence" lang="en"; 'text-align:center'>
+	{{edit:EnglishSentence}}
+	</div>
+{{/EnglishSentence}}
+
+
+<div class="audio">{{VocabAudio}}{{SentAudio}}<div style="display:none">[sound:_LongSilence.mp3]</div>{{SentenceContextAudio}}</div>
+
+<!--
+{{#PitchGraph}}
+<div class="pitchgraph">
+	<div>{{edit:furigana:PitchGraph}}</div>
+</div>
+{{/PitchGraph}}
+-->
+
+<div class="sentencecontext" lang="ja">
+{{edit:furigana::SentenceContext}}
+</div>
+
+<hr>
+
+<footer>
+{{#VocabKanji}}
+<a href="https://jisho.org/search?keyword={{kanji:text:VocabKanji}}" title="Sentence on Jisho">Jisho</a>
+<a href="https://www.google.co.jp/search?q={{kanji:text:VocabKanji}}&tbm=isch" title="Search images">Images</a>
+<a href="https://youglish.com/pronounce/{{kanji:text:VocabKanji}}/japanese?" title="Youglish">Youglish<a/>
+<a href="https://sentencesearch.neocities.org/#{{kanji:text:VocabKanji}}" title="Sentence Search">Sentence<a/>
+{{/VocabKanji}}
+</footer>
+
+<script>
+	document.addEventListener('DOMContentLoaded', markPitch(), false);
+	document.addEventListener('DOMContentLoaded', removePitchBrackets(), false);	
+</script>

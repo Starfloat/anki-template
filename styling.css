@@ -1,0 +1,193 @@
+@charset "utf-8";
+@font-face {
+	font-family: "IPAexGothicf";
+	src:
+		url('ipaexg.ttf');
+}
+
+* {  box-sizing: border-box; padding: 0; margin: 0; }
+.card {
+	background-color: #FFFAF0;
+	color: #2A1B0A;
+	font-family:	"IPAexGothicf",
+									"Times New Roman",
+									Times,
+									Georgia,
+									Serif;
+	font-size: 24px;
+	text-align: center;
+	line-height: 1.4;
+	max-width: auto;
+	margin:  auto;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 50px;
+	padding-left: 20px;
+}
+
+.card1 { }
+.card2 .jpsentence ruby rt { opacity: 0; }
+.card2 .jpsentence:hover ruby rt { opacity: 1; }
+
+hr { margin: 2px 0; clear: both; }
+b { font-weight: 300; }
+
+/* links */
+a { color: #532f2f; }
+a:hover { color: #722a2a ; }
+a.hint { text-decoration: none; text-align: center; display: block; }
+
+/* Top */
+header { font-size: 14px; line-height: 18px; clear: both; }
+header > div:not(:last-child) { margin-right: 3px; }
+
+/* Space between elements */
+.images { margin-top: 16px; }
+.images > img { margin-bottom: 16px; }
+
+.tags {
+	font-family: "Noto Sans", "Noto Sans CJK JP", "Liberation Sans", Arial, Sans, sans-serif;
+	text-align: center;
+	display: inline-block;
+	text-transform: lowercase;
+	background-color: #333;
+	color: #FFFAF0;
+	font-weight: bold;
+	padding: 1px 3px;
+	margin: 0;
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+/* AnkiDroid peplay button */
+.replaybutton { margin: 0; margin-right: 3px; text-decoration: none; }
+.replaybutton span  { padding: 0; font-size: 16px; }
+.replaybutton span svg {
+	fill: #FFFAF0;
+	background: #333;
+	border-radius: 3px;
+	vertical-align: top; 
+	min-width: 16px;
+	min-height: 16px;
+}
+
+/* PC peplay button */
+a.replay-button { top: -.125em;  position: relative; }
+a.replay-button svg {
+	height: 1em;
+	width: 1em;
+}
+a.replay-button svg path { fill: #FFFAF0; }
+a.replay-button svg circle { fill: #333; }
+
+/* Footer and links */
+footer {font-size: 16px; text-align: center; }
+footer>a { text-decoration: none; }
+footer > a:after {content:"·";  color: brown; display: inline-block; width: 6px; }
+footer > a:last-child:after {content:""; width: 0; }
+
+/*Definitions*/
+.definitions {
+	display: inline;
+}
+
+/* Vocab */
+.vocab { margin-top: 16px; font-size: 32px }
+.vocab div { display: inline-block; }
+.vocab  br { display: none; }
+.vocab > .tags { vertical-align: top; }
+.notes > .tags { vertical-align: bottom; }
+
+/* Images */
+.images {
+	/* float: left; */
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: flex-start;
+	align-content: space-between;
+	justify-content: space-evenly;
+}
+.images > img {
+	max-width: 47%;
+	border-radius: 4px;
+	filter: sepia(33%);
+}
+.images>img:only-child {
+    max-width: 100%;
+}
+
+/*Audio Buttons*/
+.audio {
+	font-size:24px;
+}
+
+/*Main Sentence*/
+.jpsentence {
+	font-size: 32px;
+}
+
+/*Eng Sentence*/
+.ensentence {
+	font-size: 16px;
+}
+
+/*Conjugation*/
+.jpsentence > span {
+	font-size: 12px;
+}
+
+/*Sentence Context */
+.sentencecontext {
+	overflow: hidden;
+	padding: 2%;
+	font-size: 16px;
+	text-align: left;
+}
+
+
+/* Fix for Yomichan defs */
+ul, ol {
+  list-style-type: none; 
+  display: inline;
+  margin: 0px;
+  padding: 0px;
+}
+
+.pitchgraph {
+	text-align: center;
+	font-size: 16px;
+}
+
+/*Front Word (Button)*/
+.wordButton span {
+  font-size: 64px;
+  text-align: center;
+}
+
+.wordButton {
+    font-family: inherit;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+/*Back Word (Button)*/
+.showPitchPosBtn span {
+	font-size: 32px;
+	text-align: center;
+  }
+  
+  .showPitchPosBtn {
+	  font-family: inherit;
+	  background-color: transparent;
+	  background-repeat: no-repeat;
+	  border: none;
+	  cursor: pointer;
+	  overflow: hidden;
+	  outline: none;
+  }

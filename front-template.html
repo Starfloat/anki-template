@@ -1,0 +1,21 @@
+<!--
+<header>
+   {{#Tags}}
+   <div class="tags">{{Tags}}</div>
+   {{/Tags}}
+</header>
+-->
+
+<button class="wordButton" type="button"  onclick="
+if
+(document.getElementById('wordButton') .style.display=='none')
+{document.getElementById('wordButton') .style.display=''}
+else
+{document.getElementById('wordButton') .style.display='none'}">
+<span id="VocabFront">{{VocabKanji}}</span>
+</button>
+<div class="spoiler" id="wordButton" style="display:none"> 
+{{SentSentence}}
+</div> 
+
+<div style='font-family: Arial; font-size: 20px;'>{{edit:Hint}}</div>
