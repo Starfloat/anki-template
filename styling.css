@@ -135,11 +135,6 @@ footer > a:last-child:after {content:""; width: 0; }
 	font-size: 16px;
 }
 
-/*Conjugation*/
-.jpsentence > span {
-	font-size: 12px;
-}
-
 /*Sentence Context */
 .sentencecontext {
 	overflow: hidden;
@@ -164,7 +159,7 @@ ul, ol {
 
 /*Front Word (Button)*/
 .wordButton span {
-  font-size: 64px;
+  font-size: 48px;
   text-align: center;
 }
 
