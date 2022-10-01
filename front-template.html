@@ -5,17 +5,35 @@
    {{/Tags}}
 </header>
 -->
-<div>{{Conjugation}}</div>
 <button class="wordButton" type="button"  onclick="
 if
 (document.getElementById('wordButton') .style.display=='none')
 {document.getElementById('wordButton') .style.display=''}
 else
 {document.getElementById('wordButton') .style.display='none'}">
-<span id="VocabFront">【{{VocabKanji}}】<br>{{Inflection}}</span>
+<span id="frontword"><div class="frontword" hidden>【{{VocabKanji}}】</div>
+{{#Inflection}}
+<div class="frontword" hidden><span id="conjugation">{{Conjugation}}</span>{{Inflection}}</div>
+{{/Inflection}}</span>
 </button>
 <div class="spoiler" id="wordButton" style="display:none"> 
+{{#SentenceContext}}
+{{SentenceContext}}
+{{/SentenceContext}}
+{{^SentenceContext}}
 {{SentSentence}}
+{{/SentenceContext}}
 </div> 
 
 <div style='font-family: Arial; font-size: 20px;'>{{edit:Hint}}</div>
+
+<script>
+(() => {
+	const fields = [...document.querySelectorAll(".frontword")];
+	function randomInt(max) {
+		return Math.floor(Math.random() * max);
+	}
+	rand = randomInt(fields.length)
+	fields[rand].hidden = false;
+})();
+</script>

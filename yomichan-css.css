@@ -1,0 +1,96 @@
+li.definition-item[data-dictionary='JMdict-'] .gloss-list, li.definition-item[data-dictionary='KireiCake'] .gloss-list, li.definition-item[data-dictionary='研究社　新和英大辞典　第５版'] .gloss-list {
+    opacity: 0;
+  }
+  li.definition-item[data-dictionary='JMdict-']:hover .gloss-list, li.definition-item[data-dictionary='KireiCake']:hover .gloss-list, li.definition-item[data-dictionary='研究社　新和英大辞典　第５版']:hover .gloss-list {
+    opacity: 1;
+  }
+  
+  
+  body {
+      background: #2E3440;
+  
+  }
+  
+  .kanji-link {
+      color: #ebffff;
+  
+  }
+  
+  .source-text {
+      color: #ebffff;
+  
+  }
+  
+  
+  .glossary {
+      color: #ebffff;
+  
+  }
+  
+  
+  :root {
+      --background-color: #2E3440;
+      --tag-text-color: white;
+      --tag-border-color: transparent
+      --tag-default-background-color: #88C0D0;
+      --tag-name-background-color: #88C0D0;
+      --tag-expression-background-color: #88C0D0;
+      --tag-popular-background-color: #88C0D0;
+      --tag-frequent-background-color: #88C0D0;
+      --tag-archaism-background-color: #88C0D0;
+      --tag-dictionary-background-color: #8FBCBB;
+      --tag-frequency-background-color: #81A1C1;
+      --tag-part-of-speech-background-color: #88C0D0;
+      --tag-search-background-color: #88C0D0;
+      --tag-pitch-accent-dictionary-background-color: #5E81AC;
+      --accent-color: #8FBCBB;
+      --text-color: #ebffff;
+      --pitch-accent-annotation-color: #ebffff;
+      --input-background-color: #3B4252;
+      --reason-text-color: #5E81AC;
+      --notification-text-color: #ebffff;
+      --notification-background-color: #3B4252;
+      --progress-bar-track-color: #D8DEE9;
+      --light-border-color: #E5E9F0;
+      --sidebar-background-color: #2E3440;
+      --sidebar-button-background-color: transparent;
+      --sidebar-button-background-color-hover: #81A1C1;
+      --sidebar-button-background-color-active: #6d88a3;
+      --sidebar-button-danger-background-color: transparent;
+      --sidebar-button-danger-background-color-hover: #BF616A;
+      --sidebar-button-danger-background-color-active: #8a373f;
+      --sidebar-button-icon-color: #ebffff;
+      --sidebar-button-disabled-icon-color: #808c8c;
+      --sidebar-button-danger-icon-color: #ebffff;
+  
+  }
+  
+  ::-webkit-scrollbar {
+      display: none;
+  
+  }
+  
+  .definition-item-content, .gloss-image-link {
+    max-width: 100%;
+  }
+   
+  .gloss-image-container {
+    background: none !important;
+  }
+   
+  .gloss-image-link[data-has-aspect-ratio="true"] .gloss-image {
+    position: static;
+    max-height: 200px;
+  }
+   
+  .gloss-image-link[data-has-aspect-ratio="true"] .gloss-image-aspect-ratio-sizer {
+    display: none;
+  }
+   
+  .gloss-image-container-overlay {
+    display: none;
+  }
+   
+  img {
+    will-change: transform;
+  }

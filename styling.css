@@ -163,6 +163,11 @@ ul, ol {
   text-align: center;
 }
 
+.wordButton span span {
+	font-size: 20px;
+	display: block;
+}
+
 .wordButton {
     font-family: inherit;
     background-color: transparent;
