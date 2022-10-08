@@ -329,4 +329,12 @@
     {{~/if~}}
 {{/inline}}
 
+{{#*inline "freq"}}
+    {{~#if (op ">" definition.frequencies.length 0)~}}
+        {{#regexReplace "[^\d]" ""}}
+            {{definition.frequencies.[0].frequency}}
+        {{/regexReplace}}
+    {{~/if~}}
+{{/inline}}
+
 {{~> (lookup . "marker") ~}}
