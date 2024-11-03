@@ -7,7 +7,7 @@ My Anki Template for Japanese card creation with Yomichan
 | Anki                 | Yomichan                                 | Description                                                             |
 |----------------------|------------------------------------------|-------------------------------------------------------------------------|
 | VocabKanji           | {expression}                             | Word in Kanji Form.                                                     |
-| SentSentence         | {cloze-prefix}{cloze-body}{cloze-suffix} | Main Sentence                                                           |
+| SentSentence         | {cloze-prefix}<b>{cloze-body}</b>{cloze-suffix} | Main Sentence                                                           |
 | SentFuriganaSentence | {sentence-furigana}                      | Sentence in furigana form                                               |
 | EnglishSentence      | manual                                   |                                                                         |
 | VocabAudio           | {audio}                                  | Sent by Yomichan.                                                       |
